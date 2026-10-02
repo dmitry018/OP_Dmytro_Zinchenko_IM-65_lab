@@ -3,7 +3,6 @@ const obj = {number: 0, boolean: 0, string: 0};
 
 for(const item of array) {
     const type = typeof item;
-
 obj[type]++;
 }
 
@@ -12,13 +11,12 @@ console.dir(obj);
 // без ключів
 const dynamicObj = {};
 
-for(const item1 of array) {
-    const type1 = typeof item1;
-
-    if (dynamicObj[type1] === undefined)
-        dynamicObj[type1] = 1;
+for(const item of array) {
+    const type = typeof item;
+    if (dynamicObj[type] === undefined)
+        dynamicObj[type] = 1;
     else
-        dynamicObj[type1]++;
+        dynamicObj[type]++;
 }
 
 console.dir(dynamicObj);
