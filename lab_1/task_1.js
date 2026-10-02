@@ -5,10 +5,10 @@ const a = 23;
 const b = inc(a);
 console.dir({a, b});
 
-// завдання друге
-function incObj(obj) {
-obj.n++;
+//завдання друге
+function inc1(num) { // значення inc зайняте
+    return num.n++;
 }
 const myObj = {n: 8};
-incObj(myObj);
+inc1(myObj);
 console.dir(myObj);
